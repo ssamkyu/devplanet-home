@@ -13,13 +13,17 @@ if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
 const config = {
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb+srv://ssamkyu:wFkIIvQkS9OVrjwn@cluster0.urngty5.mongodb.net/?retryWrites=true&w=majority',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
+  appId: process.env.APP_ID || 'stylenetwork',
+  masterKey: process.env.MASTER_KEY || 'wFkIIvQkS9OVrjwn', //Add your master key here. Keep it secret!
+  clientKey: 's3ddfdflkj23ddfs',
+  javascriptKey:'asdhhsidef24sdndf',
+  restAPIKey:'vbnnsdhfeu23nmfs34',
+  dotNetKey: 'sacdfieun3498fhcdb',
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse', // Don't forget to change to https if needed
   liveQuery: {
-    classNames: ['Posts', 'Comments'], // List of classes to support for query subscriptions
+    classNames: [], // List of classes to support for query subscriptions
   },
 };
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
