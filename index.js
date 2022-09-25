@@ -13,7 +13,8 @@ if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
 const config = {
-  databaseURI: databaseUri || 'mongodb+srv://devplanet:WdDPhkQV2IJM24zq@cluster0.0yywr4z.mongodb.net/?retryWrites=true&w=majority',
+  databaseURI: databaseUri || 'mongodb+srv://ssamkyu:wFkIIvQkS9OVrjwn@cluster0.urngty5.mongodb.net/?retryWrites=true&w=majority',
+  //databaseURI: databaseUri || 'mongodb+srv://devplanet:WdDPhkQV2IJM24zq@cluster0.0yywr4z.mongodb.net/?retryWrites=true&w=majority',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'devplanet',
   masterKey: process.env.MASTER_KEY || 'dsfvmkldvnnfdjgnsdlfgj', //Add your master key here. Keep it secret!
